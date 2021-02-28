@@ -56,13 +56,13 @@
   </nav>
   
   <div class="container">
-    <h1 class="mb-4 mt-5" style="line-height: 33px;">Mentor List</h1>
+    <h1 class="mb-4 mt-5" style="line-height: 1.5;">Mentor List</h1>
     <a href="/articles/new" class="btn btn-success" style="background-color: #F8E16C; border: none; color: black;">Add Mentor</a>
 
     <% articles.forEach(article => { %>
       <div class="card mt-4">
         <div class="card-body">
-          <h4 class="card-title"><%= article.title %></h4>
+          <h4 class="card-title" style="line-height: 1.5"><%= article.title %></h4>
           <div class="card-subtitle text-muted mb-2">
             Updated on: <%= article.createdAt.toLocaleDateString() %>
           </div>

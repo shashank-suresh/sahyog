@@ -1,0 +1,24 @@
+{
+  "name": "sahyog",
+  "version": "1.0.0",
+  "description": "A website for mentors to reach out to mentees ",
+  "main": "index.js",
+  "scripts": {
+    "devStart": "nodemon server.js"
+  },
+  "author": "Shashank Suresh, Dwija Patel, Rishit Anand, Immanuel Varghese Koshy",
+  "license": "ISC",
+  "dependencies": {
+    "dompurify": "^2.2.6",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "jsdom": "^16.4.0",
+    "marked": "^2.0.1",
+    "method-override": "^3.0.0",
+    "mongoose": "^5.11.18",
+    "slugify": "^1.4.7"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}

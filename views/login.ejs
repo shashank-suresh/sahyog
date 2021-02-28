@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Form Styling</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+       box-sizing: border-box;
+       padding: 0;
+       margin: 0;
+      }
+
+      body {
+        font-family: "Raleway",sans-serif;
+        background: #f1f1f1;
+        color: #fff;
+        line-height: 1.8;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      #container {
+        margin: 30px auto;
+        max-width: 400px;
+        padding: 20px;
+      }
+
+      .form-wrap {
+        background: #fff;
+        padding: 15px 25px;
+        color: #333;
+      }
+
+      .form-wrap h1,
+      .form-wrap p {
+        text-align: center;
+      }
+
+      .form-wrap .form-group {
+        margin-top: 15px;
+      }
+
+      .form-wrap .form-group label {
+        display: block;
+        color: #666;
+      }
+
+      .form-wrap .form-group input {
+        width:100%;
+        padding: 10px;
+        border: #ddd 1px solid;
+        border-radius: 5px;
+      }
+
+      .form-wrap button {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        margin-top: 20px;
+        color: #000;
+        cursor: pointer;
+        background: #F8E16C;
+        border-radius: 10px;
+      }
+
+      .form-wrap button:hover {
+        background: #7e9d7d;
+      }
+
+      .form-wrap .bottom-text {
+        font-size: 13px;
+        margin-top: 20px;
+      }
+
+      footer {
+        text-align: center;
+        margin-top: 10px;
+        color: #000;
+      }
+
+      footer a {
+        color: #F8E16C;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div class="form-wrap">
+        <h1>Login</h1>
+        <form action="/login-sub" method="POST">
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" />
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" />
+          </div>
+          <button type="submit" class="btn" onclick="window.location.href='/login-sub'">Login</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

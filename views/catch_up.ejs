@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Main</title>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Raleway:wght@600&display=swap" rel="stylesheet"> 
+  <!-- CSS Styling -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body{
+      background-image: url(./group.png);
+      background-position: 75% 75%;
+      background-size: cover;
+      background-repeat: no-repeat ;
+    }
+    
+    .btn {
+      padding: 10px 20px;
+      margin-top: 20px;
+      color: #000;
+      cursor: pointer;
+      outline: none;
+      background: #F8E16C;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-transparent p-0">
+    <!-- Logo -->
+    <a class="navbar-brand" href="/" style="margin-left: 40px; margin-top: 20px;"><img src="./sahyog-logo.png" alt="Sahyog" style="height: 10vh;"></a>
+    
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto" style="border-bottom: 6px solid #F8E16C">
+        <li class="nav-item">
+          <a class="nav-link" href="articles/community">Community</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/plans">Plans</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/profile">Profile</a>
+        </li>
+        <li class="nav-item" style="margin-right: 45px;">
+            <a class="nav-link" href="/catch_up">Catch Up!</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <h2 id="mentor-contact">Contact your Mentor!</h2>
+
+  <div class="row">
+    <div class="col-6">
+      <form action="/contact" class="catch-form">
+      <div class="contact-form">
+          <label for="name">Name</label><br>
+          <input type="text" name="name" id="name" placeholder="Enter your name" class="catch_input">
+      </div>
+      <div class="contact-form">
+          <label for="email">Email</label><br>
+          <input type="email" name="email" id="email" placeholder="Enter an email" class="catch_input">
+      </div>
+      <div class="contact-form">
+          <label for="message">Message</label> <br>
+          <textarea name="message" id="message" cols="50" rows="5" class="catch_input"></textarea>
+      </div class="contact-form">
+      <button type="submit" class="btn">Submit</button>
+      </form>
+    </div>
+    <div class="col-6">
+      <img class="mx-auto d-block" src="./Saly-10.png" alt="" style="height: 450px;">
+    </div>
+  </div>
+</body>
+</html>

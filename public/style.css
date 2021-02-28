@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  overflow: hidden;
+  background: #f2f2f2;
+}
+#click{
+  display: none;
+}
+label{
+  position: absolute;
+  right: 30px;
+  bottom: 20px;
+  height: 55px;
+  width: 55px;
+  background: -webkit-linear-gradient(left, #a445b2, #fa4299);
+  text-align: center;
+  line-height: 55px;
+  border-radius: 50px;
+  font-size: 30px;
+  color: #fff;
+  cursor: pointer;
+}
+label i{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.4s ease;
+}
+label i.fas{
+  opacity: 0;
+  pointer-events: none;
+}
+#click:checked ~ label i.fas{
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(-50%, -50%) rotate(180deg);
+}
+#click:checked ~ label i.fab{
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%) rotate(180deg);
+}
+.wrapper{
+  position: absolute;
+  right: 30px;
+  bottom: 0px;
+  max-width: 400px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0px 15px 20px rgba(0,0,0,0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.6s cubic-bezier(0.68,-0.55,0.265,1.55);
+}
+#click:checked ~ .wrapper{
+  opacity: 1;
+  bottom: 85px;
+  pointer-events: auto;
+}
+.wrapper .head-text{
+  line-height: 60px;
+  color: #fff;
+  border-radius: 15px 15px 0 0;
+  padding: 0 20px;
+  font-weight: 500;
+  font-size: 20px;
+  background: -webkit-linear-gradient(left, #a445b2, #fa4299);
+}
+.wrapper .chat-box{
+  padding: 20px;
+  width: 100%;
+}
+.chat-box .desc-text{
+  color: #515365;
+  text-align: center;
+  line-height: 25px;
+  font-size: 17px;
+  font-weight: 500;
+}
+.chat-box form{
+  padding: 10px 15px;
+  margin: 20px 0;
+  border-radius: 25px;
+  border: 1px solid lightgrey;
+}
+.chat-box form .field{
+  height: 50px;
+  width: 100%;
+  margin-top: 20px;
+}
+.chat-box form .field:last-child{
+  margin-bottom: 15px;
+}
+form .field input,
+form .field button,
+form .textarea textarea{
+  width: 100%;
+  height: 100%;
+  padding-left: 20px;
+  border: 1px solid lightgrey;
+  outline: none;
+  border-radius: 25px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+form .field input:focus,
+form .textarea textarea:focus{
+  border-color: #fc83bb;
+}
+form .field input::placeholder,
+form .textarea textarea::placeholder{
+  color: silver;
+  transition: all 0.3s ease;
+}
+form .field input:focus::placeholder,
+form .textarea textarea:focus::placeholder{
+  color: lightgrey;
+}
+.chat-box form .textarea{
+  height: 70px;
+  width: 100%;
+}
+.chat-box form .textarea textarea{
+  height: 100%;
+  border-radius: 50px;
+  resize: none;
+  padding: 15px 20px;
+  font-size: 16px;
+}
+.chat-box form .field button{
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  background: -webkit-linear-gradient(left, #a445b2, #fa4299);
+  transition: all 0.3s ease;
+}
+.chat-box form .field button:active{
+  transform: scale(0.97);
+}
+
+
+
+*{
+  margin:0px;
+  padding:0px;
+  box-sizing:border-box;
+}
+body {
+font-family: 'Poppins', sans-serif;
+margin: 0;
+padding: 0;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale; 
+}
+.quotes {
+width: 80vw;
+min-height: 400px;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+z-index: 2;
+box-sizing: border-box;
+}
+.quotes .box {
+position: relative;
+width: 25vw;
+height: 50vh;
+min-height: 320px;
+background: #f2f2f2;
+overflow: hidden;
+transition: all 0.5s ease-in;
+z-index: 2;
+box-sizing: border-box;
+padding: 30px;
+box-shadow: -10px 25px 50px rgba(0, 0, 0, 0.3);
+}
+.quotes .box::before {
+content: '\201C';
+position: absolute;
+top: -20px;
+left: 5px;
+width: 100%;
+height: 100%;
+font-size: 120px;
+opacity: 0.2;
+background: transparent;
+pointer-events: none;
+}
+.quotes .box::after {
+content: '\201D';
+position: absolute;
+bottom: -10%;
+right: 5%;
+font-size: 120px;
+opacity: 0.2;
+background: transparent;
+filter: invert(1);
+pointer-events: none;
+}
+.quotes .box p {
+margin: 0;
+padding: 10px;
+font-size: 1.2rem;
+}
+
+.quotes .box h2 {
+position: absolute;
+margin: 0;
+padding: 0;
+bottom: 10%;
+right: 10%;
+font-size: 1.5rem;
+}
+.quotes .box:hover {
+color: #f2f2f2;
+box-shadow: 20px 50px 100px rgba(0, 0, 0, 0.5);
+}
+.quotes .bg {
+position: absolute;
+top: 0;
+left: 0;
+z-index: 1;
+opacity: 0;
+transition: all 0.5s ease-in;
+pointer-events: none;
+width: 100%;
+height: 100vh;
+overflow: hidden;
+}
+.quotes .box.box1:hover,
+.quotes .box.box1:hover~.bg {
+opacity: 1;
+background: #e2a9e5;
+background: -moz-linear-gradient(-45deg, #e2a9e5 15%, #2b94e5 100%);
+background: -webkit-linear-gradient(-45deg, #e2a9e5 15%,#2b94e5 100%);
+background: linear-gradient(135deg, #e2a9e5 15%,#2b94e5 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2a9e5', endColorstr='#2b94e5',GradientType=1 );
+}
+.quotes .box.box2:hover,
+.quotes .box.box2:hover~.bg {
+opacity: 1;
+background: #632c65;
+background: -moz-linear-gradient(-45deg, #632c65 15%, #56a5e2 100%);
+background: -webkit-linear-gradient(-45deg, #632c65 15%,#56a5e2 100%);
+background: linear-gradient(135deg, #632c65 15%,#56a5e2 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#632c65', endColorstr='#56a5e2',GradientType=1 );
+}
+
+.quotes .box.box3:hover,
+.quotes .box.box3:hover~.bg {
+opacity: 1;
+background: #4b384c;
+background: -moz-linear-gradient(-45deg, #4b384c 15%, #da5de2 100%);
+background: -webkit-linear-gradient(-45deg, #4b384c 15%,#da5de2 100%);
+background: linear-gradient(135deg, #4b384c 15%,#da5de2 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4b384c', endColorstr='#da5de2',GradientType=1 );
+}
+
+@media (max-width:767px){
+.quotes{
+    width:100%;
+    padding:20px; 
+}
+.quotes .box {
+    width:100%;
+    margin-bottom: 20px;
+}
+}
+
+

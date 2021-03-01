@@ -4,7 +4,7 @@ An assisting website for highschool students and the undergrad students who are 
 
 
 
-![storyanimate 1](https://user-images.githubusercontent.com/77975418/109459005-eff44680-7a83-11eb-8c2b-d2676f7d3462.gif)
+![storyanimate 1](https://user-images.githubusercontent.com/77975418/109459005-eff44680-7a83-11eb-8c2b-d2676f7d3462.gif | height = 100)
 
 # What does the news articles say?
 * Over half of Indian students will not have skills for 21st century jobs, warns UNICEF

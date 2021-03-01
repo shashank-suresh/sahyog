@@ -2,6 +2,10 @@
 
 An assisting website for highschool students and the undergrad students who are beginning their journey in tech. Through this platform they can find mentors for themselves and develop enthusiasm to learn. India is a country which is known for producing maximum number of engineers, but not quality engineers. High school students are not introduced to the latest tech and a lot of colleges do not have a healthy learning community. Sahyog gives a platform to such people to grab knowledge from students/seniors who have already been in the tech journey for a while now and wishes to mentor.  
 
+
+
+![storyanimate 1](https://user-images.githubusercontent.com/77975418/109459005-eff44680-7a83-11eb-8c2b-d2676f7d3462.gif)
+
 # What does the news articles say?
 * Over half of Indian students will not have skills for 21st century jobs, warns UNICEF
 * Over 80% Indian engineers are unemployable, lack new-age technology skill.
